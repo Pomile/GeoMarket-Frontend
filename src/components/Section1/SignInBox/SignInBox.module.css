@@ -1,0 +1,29 @@
+.SignInBox{
+    display: flex;
+    padding: 20px;
+    width: 87%;
+    flex-direction: column;
+    align-content: space-around;
+    height: 300px;
+}
+
+.SignInBox input{
+    width: 94%;
+    height: 36px;
+    font-size: medium;
+    padding: 6px;
+    border: 0.8px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.SignInBox input[type="text"]:focus, input[type="password"]:focus{
+    outline: none;
+}
+
+.SignInBox div{
+    margin-bottom: 20px;
+}
+
+.SignInBox h4{
+    text-align: center;
+}
