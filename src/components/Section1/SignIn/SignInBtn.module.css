@@ -1,0 +1,10 @@
+.SignInBtn{
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    background-color:#84B6EF;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
