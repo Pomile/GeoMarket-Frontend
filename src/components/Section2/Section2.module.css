@@ -1,0 +1,9 @@
+.Section2Background{
+    background-image: url('../../assets/images/search_team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 80%;
+}
