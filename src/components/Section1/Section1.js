@@ -5,11 +5,12 @@ import Markets from '../Markets/Markets';
 import Classes from './Section1.module.css';
 import SignInBtn from './SignIn/SignInBtn';
 
+
 const Section1 = (props) => {
     
     return (
         <div className={Classes.Section1}>
-            <Header />
+            <Header img={props.img}/>
             <Category />
             <Markets />
             <SignInBtn />

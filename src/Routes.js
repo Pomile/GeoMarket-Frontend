@@ -11,10 +11,15 @@ const asyncSignin = asyncComponent(() => {
     return import('./containers/SignIn/SignIn');
 });
 
+const asyncMarket = asyncComponent(() => {
+    return import('./containers/Market/Market');
+});
+
 class Routes extends Component {
     render() {
         let routes = (
             <Switch>
+                <Route path="/market" component={asyncMarket} />
                 <Route path="/login" component={asyncSignin} />
                 <Route path="/" exact component={asyncHome} />
                 

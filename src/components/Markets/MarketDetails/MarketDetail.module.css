@@ -1,0 +1,7 @@
+.MarketDetail{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0px 5%;
+    height: 350px;
+}
