@@ -1,0 +1,19 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 2%;
+    height: 40px;
+    background: #FBFBFB;
+    width: 96%;
+}
+
+.AdminName{
+    font-size: medium;
+    font-weight: 500;
+    padding: 8px;
+
+}
+
+.SearchItem{
+    width: 300px;
+}
