@@ -1,0 +1,27 @@
+.Tools{
+    width: 100%;
+    padding: 5px 0px;
+    background: #F2F7FC;
+    display: flex;
+    height: 4vh;
+}
+
+.ToolsItem{
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+
+}
+
+.ToolsItem img{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    
+}
+
+.ToolsItem:hover{
+    background: skyblue;
+}

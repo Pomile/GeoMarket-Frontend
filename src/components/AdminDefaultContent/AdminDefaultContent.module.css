@@ -1,0 +1,15 @@
+.AdminDefaultContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+
+.AdminDefaultContent img{
+    width: 200px;
+    height: 200px;
+}
+
+
