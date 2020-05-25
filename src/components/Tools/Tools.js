@@ -7,7 +7,7 @@ import show_all from '../../assets/images/show_all.png';
 const Tools = (props) => {
     return (
         <div className={Classes.Tools}>
-            <div className={Classes.ToolsItem}>
+            <div className={Classes.ToolsItem} onClick={() => props.addMarket()}>
                 <img src={add} alt={"add Market"} />
                 
             </div>

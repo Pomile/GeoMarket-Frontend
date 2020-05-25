@@ -23,7 +23,7 @@ class Home extends Component{
                         <SignInBtn />
                     </Section1>
                     <Section2 noBg={false}>
-                        <Backdrop >
+                        <Backdrop full={false} >
                             <LogoHolder />
                             <Caption />
                         </Backdrop>

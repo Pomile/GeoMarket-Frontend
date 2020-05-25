@@ -1,0 +1,119 @@
+.MarketImageForm{
+    width: 100%;
+    height: 300px;
+    border-top: 1.3px solid whitesmoke;
+    height: 400px;
+}
+
+
+.MarketImageHolder{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    
+}
+
+.MarketImageHolder img{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    z-index: 0;
+}
+
+.MarketImageUploadViewer{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.MarketImageUploadViewer img{
+    width: 100%;
+    height: 350px;
+
+}
+
+.MarketImageFormIcon{
+    width: 26px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 2;
+    background: white;
+    cursor: pointer;
+    
+}
+
+.MarketImageFormIcon img{
+    width: 26px;
+    height: 26px;
+}
+
+
+.MaketImage{
+    width: 300px;
+    height: 300px;
+}
+
+.MarketImagesHolder{
+    padding: 10px;
+    height: 80px;
+    width: 80%;
+    background: white;
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    left: 8%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.ImageScroll{
+     display: flex; 
+     width: 500px;
+}
+
+.MarketImagesHolder:hover{
+    overflow-x: scroll;
+}
+
+.MarketImagesHolder .img{
+    height: 80px;
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.img img{
+    height: 80px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+
+.MarketImageForm .Button{
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    background-color:#84B6EF;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 90px;
+}
+
+.MarketImageForm Button.active {
+     background-color:rgb(77, 131, 192);
+
+}
+
+.Button:hover{
+    background-color:rgb(62, 127, 202);;
+}

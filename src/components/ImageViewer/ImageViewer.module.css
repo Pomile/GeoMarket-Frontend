@@ -1,0 +1,38 @@
+.ImageViewer{
+    width: 400px;
+    height: 350px;
+    position: relative;
+    top: 15%;
+}
+
+
+.ImageViewer img{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    z-index: 0;
+}
+
+.close{
+    color:white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ImageViewerIcon{
+    width: 26px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    z-index: 2;
+    background: white;
+    cursor: pointer;
+}
+
+.ImageViewerIcon img{
+    width: 26px;
+    height: 26px;
+}

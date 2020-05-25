@@ -3,6 +3,14 @@
     height: 100vh;
     width: 100%;
    
+   
+}
+
+.BackdropFixed{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
 }
 
 .BackdropShow{
