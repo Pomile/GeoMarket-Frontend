@@ -16,7 +16,7 @@ const SignInBox = (props) => {
                 <input type="password" name="email" placeholder="Password" id="email" />
 
             </div>
-            <SignInBtn />
+            <SignInBtn navigate={props.signIn}/>
         </div>
     )
 }

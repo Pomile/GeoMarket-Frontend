@@ -10,6 +10,9 @@ import Category from '../../components/Category/Category';
 import MarketDetail from '../../components/Markets/MarketDetails/MarketDetail';
 
 class Market extends Component {
+    doNothing = () => {
+        
+    }
     render() {
         return (
             <Aux>
@@ -17,7 +20,7 @@ class Market extends Component {
                     <Section1>
                         <Header img={imageSample} />
                        <Category />
-                        <MarketDetail />
+                        <MarketDetail nothing = {this.doNothing} />
                     </Section1>
                     <Map />
                 </div>

@@ -10,6 +10,12 @@ const MarketForm = (props) => {
                 <input type="textarea" name="name" placeholder="name" />
             </div>
             <div>
+                <select name="name" placeholder="name">
+                    <option value="Food">Food</option>
+                    <option value="Fabrics">Fabrics</option>
+                </select>
+            </div>
+            <div>
                 <input type="text" name="Street" placeholder="Street" />
             </div>
             <div>
@@ -23,7 +29,7 @@ const MarketForm = (props) => {
             </div>
             
             <div>
-                <center> <Button name={"Add market"} style={Classes.Button} /></center>
+                <center> <Button name={"Add market"} style={Classes.Button} clicked={props.save}/></center>
             </div>
            
         </div>

@@ -28,7 +28,9 @@ class Admin extends Component {
             allMarket: false
         }
     }
+    saveMarket = () => {
 
+    }
     addMarketHandler = () => {
         this.setState({
             ...this.state,  display: { homeDefault: false, market: { info: true, image: false}}
@@ -55,12 +57,11 @@ class Admin extends Component {
         const { display } = this.state;
         const { homeDefault, allMarket, market } = display;
         const { image, info, imageViewer } = market;
-        console.log(info, image);
         if (image || info) {
             displayUI = (
                 <TabBlock>
                     <Tabs image={image} info={info} addMarket={this.addMarketHandler} addImage={this.addMarketImageHandler}/>
-                    {info ? <MarketForm /> : <MarketImageForm upload={this.imageViewerHandler}/>}
+                    {info ? <MarketForm save={this.saveMarket}/> : <MarketImageForm upload={this.imageViewerHandler}/>}
                 </TabBlock>
             );
         }
@@ -72,7 +73,7 @@ class Admin extends Component {
                 <div className={Classes.Layout}>
                     <Section1>
                         <AdminHeader />
-                        <div className={Classes2.AdminSectionTabs}>
+                        <div className={Classes2.AdminSectionTabs} >
                             <div className={Classes2.AdminSectionTab}>Market</div>
                         </div>  
                     </Section1>

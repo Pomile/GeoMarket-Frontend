@@ -7,7 +7,7 @@ import MarketImages from '../../MarketImages/MarketImages';
 const MarketDetail = (props) => {
     return (
         <div className={Classes.MarketDetail}>
-            <Market />
+            <Market clickable={false} clicked={props.nothing}/>
             <MarketImages />
 
         </div>

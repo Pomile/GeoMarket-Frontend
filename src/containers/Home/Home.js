@@ -12,6 +12,12 @@ import Markets from '../../components/Markets/Markets';
 import SignInBtn from '../../components/Section1/SignIn/SignInBtn';
 
 class Home extends Component{
+    SignInHandler = () => {
+        this.props.history.replace("/login");
+    }
+    marketHandler = () => {
+        this.props.history.replace("/market")
+    }
     render() {
         return (
             <Aux>
@@ -19,8 +25,8 @@ class Home extends Component{
                     <Section1>
                         <Header />
                        <Category />
-                        <Markets />
-                        <SignInBtn />
+                        <Markets clickable={true} market={this.marketHandler}/>
+                        <SignInBtn navigate={this.SignInHandler}/>
                     </Section1>
                     <Section2 noBg={false}>
                         <Backdrop full={false} >

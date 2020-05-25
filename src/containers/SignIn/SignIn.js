@@ -10,7 +10,10 @@ import Backdrop from '../../components/UI/Backdrop/Backdrop';
 import LogoHolder from '../../components/Section2/LogoHolder/LogoHolder';
 import Caption from '../../components/Section2/Caption/Caption';
 
-class Home extends Component {
+class SignIn extends Component {
+    signInHandler = () => {
+        this.props.history.replace("/admin");
+    }
     render() {
         return (
             <Aux>
@@ -18,7 +21,7 @@ class Home extends Component {
                     <Section1>
                         <Header />
                         <Category />
-                        <SignInBox />
+                        <SignInBox signIn={this.signInHandler}/>
                     </Section1>
                     <Section2 noBg={false}>
                         <Backdrop >
@@ -27,7 +30,6 @@ class Home extends Component {
                         </Backdrop>   
                     </Section2>
                 </div>
-
             </Aux>
         )
     }
@@ -35,4 +37,4 @@ class Home extends Component {
 
 
 
-export default Home;
+export default SignIn;

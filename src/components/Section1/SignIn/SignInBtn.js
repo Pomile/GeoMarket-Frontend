@@ -5,7 +5,7 @@ import Classes from './SignInBtn.module.css';
 const SignInBtn = (props) => {
     
     return(<center>
-                <Button name={"Sign in"} style={Classes.SignInBtn} />
+        <Button name={"Sign in"} style={Classes.SignInBtn} clicked={props.navigate}/>
             </center>
     )
 }

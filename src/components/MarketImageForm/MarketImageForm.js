@@ -22,7 +22,6 @@ const MarketImageForm = (props) => {
             </div>
             <center><Button name={"Upload"} style={Classes.Button} clicked={props.upload} /></center>
         </div>
-    
     )
 }
 
