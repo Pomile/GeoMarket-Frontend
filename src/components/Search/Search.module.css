@@ -5,22 +5,27 @@
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    padding: 4px;
-    padding-right: 16px;
+    padding: 4px 2%;
+    padding-right: 4%;
+    position: relative;
     
 }
 
 .SearchBox input{
-    width: 190px;
+    width: 72%;
     height: 28px;
     border: none;
-    padding: 4px;
+    padding: 4px 10% 4px 14%;
     font-size: 14px;
+    z-index: 0;
+    position: absolute;
+    border-radius: 10px;
 }
 
 .SearchBox input[type=text]:focus{
     outline: none;
 }
+
 
 .SearchBox button{
     width: 32px;
@@ -28,5 +33,25 @@
     background: none;
     border: none;
     outline:none;
+    position: absolute;
+    z-index: 1;
+    right: 15px;
+    font-size: 28px;
+    text-align: center;
+    color: gray;
+    cursor: pointer;
 }
 
+.SearchBox button:hover{
+    color: rgb(0, 162, 255);
+}
+
+.SearchBox .SearchFilter{
+    padding: 6px 8px;
+     font-size: 18px;
+     background: whitesmoke;
+     vertical-align: bottom;
+     color: gray;
+     position: absolute;
+     z-index: 1;
+}

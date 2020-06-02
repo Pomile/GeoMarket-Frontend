@@ -21,6 +21,11 @@
     
 }
 
+
+.MarketForm div select:focus{
+   outline: none;
+}
+
 .MarketForm div{
    margin-bottom: 5px;
 

@@ -1,8 +1,9 @@
 .Section1Header{
-    padding: 10px;
+    padding: 10px 3%;
     background-color: #B2B9F4;
-    width: 100%;
+    width: 94%;
     height: 150px;
+    z-index: 5;
 }
 .AdminHeader{
     padding: 10px 0px;
