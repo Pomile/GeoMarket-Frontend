@@ -1,0 +1,21 @@
+.DropDownContent{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 38px;
+  background: white;
+
+}
+
+
+/* .DropDownContent .Item{
+    text-align: justify;
+    cursor: pointer;
+    font-size: small;
+    padding: 5px 4px 5px 12px;
+    width: 150px;
+} */
+.Item:active, .Item.Active, .Item:hover{
+    background-color: whitesmoke;
+}

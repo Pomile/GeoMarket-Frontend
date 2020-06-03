@@ -1,14 +1,14 @@
 .Markets{
     display: flex;
-    padding: 20px;
+    padding: 15px 4%;
     
 }
 
 .MarketsStyle1{
-    width: 95%;
+    width: 92%;
     flex-direction: column;
     align-content: space-around;
-    height: 350px;
+    height: 60vh;
     overflow-y: auto;
 }
 

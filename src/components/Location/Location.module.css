@@ -1,0 +1,99 @@
+
+.Location{
+    width: 20vw;
+    height: 150px;
+    position: absolute;
+    z-index: 2;
+    background: white;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    top: 0;
+    left: 0%;
+   
+}
+
+.LocationAnimationForward{
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.2s;
+}
+
+.LocationAnimationBackward{
+    -webkit-animation: slideBack 0.5s backwards;
+    -webkit-animation-delay: 0.2s;
+    animation: slideBack 0.5s backwards;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes slide {
+    from { left: 0%}
+    to { left: 24%}
+}
+
+@keyframes slide {
+    from { left: 0%}
+    to { left: 24%}
+}
+
+@-webkit-keyframes slideBack {
+    from { left: 24%}
+    to { left: 0%}
+}
+
+@keyframes slideBack {
+    from { left: 24%}
+    to { left: 0% }
+}
+
+
+.Location p{
+    color: rgb(63, 62, 62);
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.LocationData input{
+    border: none;
+    border-bottom: 1px solid rgb(183, 198, 248);
+    width: 90%;
+    padding: 8px;
+}
+
+.LocationData input:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(75, 243, 221);
+}
+
+.LocationData .Save{
+    font-size: 13px;
+    vertical-align: bottom;
+    border-radius: 20px;
+    background: #84B6EF;
+    color: white;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.LocationData .Save:hover{
+    background: rgb(150, 192, 240);
+}
+
+.LocationExample{
+    color: gray;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.Location .Close{
+    color: rgb(196, 210, 216);
+    text-align: right;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.Location .Close:hover{
+    color: rgb(217, 228, 233);
+    
+}

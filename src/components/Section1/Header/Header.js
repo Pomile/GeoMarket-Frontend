@@ -5,7 +5,10 @@ import Search from '../../Search/Search';
 const Section1Header = (props) => {
     let img;
     let imgStyle;
-    let style; 
+    let style;
+    const location = props.location === undefined || props.location.trim() === ''
+        ? 'Click here to set your search location'
+        : props.location;
     if (props.img !== undefined) {
         img = props.img 
         console.log(img);
@@ -20,7 +23,14 @@ const Section1Header = (props) => {
     return (
 
         <div className={style} style={imgStyle}>
-            <Search />
+            <Search
+                marketName={props.marketName}
+                setMarketName={props.setMarketName}
+                location={props.location}
+                getMarketsByName={props.getMarketsByName}
+                getMarketsByNameAndLocation={props.getMarketsByNameAndLocation}
+            />
+            <p style={{ color: 'white', fontSize: 13, cursor: 'pointer' }} onClick={() => props.setDisplayLocationBox(true)}>{location}</p>
             
         </div> 
     );
